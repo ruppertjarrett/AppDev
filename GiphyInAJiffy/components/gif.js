@@ -13,7 +13,7 @@ export default class Giphy extends Component {
         this.state = {};
     }
     getData() {
-        let url = "https://api.chucknorris.io/jokes/random";
+        let url = `http://api.giphy.com/v1/gifs/search?api_key=PMuL1yQY3C9GzsrwaHN1my1FZXToFFNH&q=${this.props.search}&limit=10`;
         fetch(url, {
             method: 'GET'
         }).then(response => response.json()).then(json => {
