@@ -10,7 +10,6 @@ export default function App() {
        https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=9f3ae244eb5741eebcef70c0bc79e546
        Linking.openURL();
        </Text> */}
-
        <Text>
        Powered by NewsAPI.org
        </Text>
