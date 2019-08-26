@@ -11,9 +11,10 @@ const ToDo = ({todo, todos}) => {
               console.log(todos);
               for(var i = 0; i < todos.length; i++){
                 if(todos[i].todo === todo){
-                  todos[i].todo = "";
+                  todos[i] = "";
                 }
             }
+            todos.push()
             console.log(todos);
             }}><Text style={{fontSize:14, fontFamily: "Arial",fontStyle:"italic", fontWeight:"200",color:"#fff",}}>REMOVE</Text></TouchableOpacity>           
     </View>    )}

@@ -4,40 +4,38 @@ import Anchor from '../components/anchor.js'
 
 export default class News extends Component {
     constructor(props) {    
-        super(props);    
+        super(props);  
+        console.log(this.props.title);  
         this.state = {                 
-          link: "",
-          title: "",
-          image: "",
-          description: "",
-          author: ""
+          link: this.props.link,
+          title: this.props.title,
+          image: this.props.image,
+          description: this.props.description,
+          author: this.props.author
           };  
       }  
 
       setNews = (link, title, image, description, author) => {
-          this.state.link = link;
-          this.state.title =title;
-          this.state.image = image;
-          this.state.description = description;
-          this.state.author = author;
       }
-        
+      componentDidMount() {
+        this.setNews("Link","title", "image", "description", "author");
+    }  
     render() {
         return (
             <View>
                 <View >
                     <Text h3>
-                        <Anchor href={this.state.link}>
-                            <Text>{this.state.title}</Text>
+                        <Anchor href={this.props.link}>
+                            <Text>{this.props.title}</Text>
                         </Anchor>
                     </Text>
                 <View>
-                    <Anchor href={this.state.link}>
-                        <Image source={{url:this.state.image}} style={{width: 250, height: 250}} />
+                    <Anchor href={this.props.link}>
+                        <Image source={{uri:this.props.image}} style={{width: 250, height: 250}} />
                     </Anchor>
                 </View>
                 <View >
-                <Text>{this.state.description}</Text>
+                <Text>{this.props.description}</Text>
                 </View>
                 < View>
                     <Text>{this.state.author}</Text>

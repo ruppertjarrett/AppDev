@@ -13,6 +13,7 @@ export default class Input extends Component {
   submit() {
     _storeData = async () => {
       try {
+        console.log(this.state.text.valueOf().toString());
         await AsyncStorage.setItem(this.state.text.valueOf().toString,this.state.text.valueOf().toString);
       } catch (error) {
         // Error saving data

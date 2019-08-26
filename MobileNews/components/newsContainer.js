@@ -96,35 +96,214 @@ export default class NewsContainer extends Component {
           .then(response => response.json())
           .then(json => {
             console.log(json);
-              this.setState.title_1 = json.articles[0].title;
-              this.setState.author_1 = json.articles[0].author;
-              this.setState.description_1 = json.articles[0].description;
-              this.setState.image_1 = json.articles[0].urlToImage;
-              this.setState.link_1 = json.articles[0].url;
+              this.setState({
+                title_1: json.articles[0].title
+              });
+              this.setState({
+                author_1: json.articles[0].author
+              });
+              this.setState({
+                link_1: json.articles[0].url
+              });
+              this.setState({
+                image_1: json.articles[0].urlToImage
+              });
+              this.setState({
+                description_1: json.articles[0].description
+              });
 
-              this.setState.title_2 = json.articles[1].title;
-              this.setState.author_2 = json.articles[1].author;
-              this.setState.description_2 = json.articles[1].description;
-              this.setState.image_2 = json.articles[1].urlToImage;
-              this.setState.link_2 = json.articles[1].url;
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
+
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
+
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
+
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
+
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
+
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
+
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
+
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
+
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
+
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
+
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
+
+              this.setState({
+                title_2: json.articles[1].title
+              });
+              this.setState({
+                author_2: json.articles[1].author
+              });
+              this.setState({
+                link_2: json.articles[1].url
+              });
+              this.setState({
+                image_2: json.articles[1].urlToImage
+              });
+              this.setState({
+                description_2: json.articles[1].description
+              });
               
-              this.setState.title_3 = json.articles[2].title;
-              this.setState.author_3 = json.articles[2].author;
-              this.setState.description_3 = json.articles[2].description;
-              this.setState.image_3 = json.articles[2].urlToImage;
-              this.setState.link_3 = json.articles[2].url;
-
-              this.setState.title_4 = json.articles[3].title;
-              this.setState.author_4 = json.articles[3].author;
-              this.setState.description_4 = json.articles[3].description;
-              this.setState.image_4 = json.articles[3].urlToImage;
-              this.setState.link_4 = json.articles[3].url;
-
-              this.setState.title_5 = json.articles[4].title;
-              this.setState.author_5 = json.articles[4].author;
-              this.setState.description_5 = json.articles[4].description;
-              this.setState.image_5 = json.articles[4].urlToImage;
-              this.setState.link_5 = json.articles[4].url;
               console.log(this.state.title_1.toString());
           });
           
@@ -137,6 +316,7 @@ export default class NewsContainer extends Component {
                 <Button onPress={() => {this.grabNews()}} title="View News" style={{width:100, height: 50, backgroundColor:'#95c5f9'}}/> 
                 <ScrollView style={styles.scroller}>
                 <News link={this.state.link_1} author={this.state.author_1} description={this.state.description_1} image={this.state.image_1} title={this.state.title_1}></News>
+                <News link={this.state.link_2} author={this.state.author_2} description={this.state.description_2} image={this.state.image_2} title={this.state.title_2}></News>
                 </ScrollView>    
             </View>
             );  
