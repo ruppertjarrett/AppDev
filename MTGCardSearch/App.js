@@ -137,30 +137,38 @@ class HomeScreen extends React.Component {
   }
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <ScrollView>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor:'#303030'}}>
         {
-    this.state.fontLoaded ? (
-      <Text style={{ fontFamily: 'noto-sans-bold-italic', fontSize: 32 }}>
+          this.state.fontLoaded ? (
+            <Text style={{ fontFamily: 'noto-sans-bold', fontSize: 32, color:'#F9C995' }}>
         MTG Card Search
-      </Text>
-    ) : null
-  }
-        <Button
-            title="Randomize"
-            onPress={() => {
-             this.getData();
-            }}
-            />
-          <Button
-            title={this.state.card_1}
+      </Text> 
+        ) 
+          : null}
+          {
+            this.state.fontLoaded ? (
+              <Button style={{fontFamily: 'noto-sans-bold-italic', fontSize: 24}}
+              color="#95c5f9"
+              title="Randomize"
+              onPress={() => {
+                this.getData();
+        }}
+        />
+          )
+          : null}
+      {
+        this.state.fontLoaded ? (
+      <ScrollView style={{fontFamily: 'noto-sans-regular', fontSize: 18, width:400, height:500}}>
+          <Button color="#95c5f9"
+          title={this.state.card_1}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_1
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_2}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -168,7 +176,8 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_3}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -176,7 +185,8 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_4}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -184,7 +194,8 @@ class HomeScreen extends React.Component {
               });
             }}
           />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_5}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -192,7 +203,8 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_6}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -200,7 +212,8 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_7}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -208,23 +221,26 @@ class HomeScreen extends React.Component {
               });
             }}
           />
-          <Button
-            title={this.state.card_8}
-            onPress={() => {
-              this.props.navigation.navigate('CardDetail', {
-                cardName: this.state.card_8
-              });
-            }}
-            />
-          <Button
-            title={this.state.card_9}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_8}
+          onPress={() => {
+            this.props.navigation.navigate('CardDetail', {
+              cardName: this.state.card_8
+            });
+          }}
+          />
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_9}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_9
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_10}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -232,7 +248,8 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_11}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -240,31 +257,35 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
-            title={this.state.card_12}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_12}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_12
               });
             }}
             />
-          <Button
-            title={this.state.card_13}
-            onPress={() => {
-              this.props.navigation.navigate('CardDetail', {
-                cardName: this.state.card_13
-              });
-            }}
-            />
-          <Button
-            title={this.state.card_14}
-            onPress={() => {
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_13}
+          onPress={() => {
+            this.props.navigation.navigate('CardDetail', {
+              cardName: this.state.card_13
+            });
+          }}
+          />
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_14}
+          onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_14
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_15}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -272,63 +293,71 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
-            title={this.state.card_16}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_16}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_16
               });
             }}
             />
-          <Button
-            title={this.state.card_17}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_17}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_17
               });
             }}
             />
-          <Button
-            title={this.state.card_18}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_18}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_18
               });
             }}
             />
-          <Button
-            title={this.state.card_19}
-            onPress={() => {
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_19}
+          onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_19
               });
             }}
             />
-          <Button
-            title={this.state.card_20}
-            onPress={() => {
-              this.props.navigation.navigate('CardDetail', {
-                cardName: this.state.card_20
-              });
-            }}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_20}
+          onPress={() => {
+            this.props.navigation.navigate('CardDetail', {
+              cardName: this.state.card_20
+            });
+          }}
             />
-          <Button
-            title={this.state.card_21}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_21}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_21
               });
             }}
             />
-          <Button
-            title={this.state.card_22}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_22}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_22
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_23}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -336,15 +365,17 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
-            title={this.state.card_24}
-            onPress={() => {
-              this.props.navigation.navigate('CardDetail', {
-                cardName: this.state.card_24
-              });
-            }}
-            />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_24}
+          onPress={() => {
+            this.props.navigation.navigate('CardDetail', {
+              cardName: this.state.card_24
+            });
+          }}
+          />
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_25}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -352,7 +383,8 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_26}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -360,7 +392,8 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_27}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -368,7 +401,8 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_28}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -376,23 +410,26 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
-            title={this.state.card_29}
-            onPress={() => {
-              this.props.navigation.navigate('CardDetail', {
-                cardName: this.state.card_29
-              });
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_29}
+          onPress={() => {
+            this.props.navigation.navigate('CardDetail', {
+              cardName: this.state.card_29
+            });
             }}
             />
-          <Button
-            title={this.state.card_30}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_30}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_30
               });
             }}
             />
-            <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+            <Button color="#95c5f9"
             title={this.state.card_31}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -400,15 +437,17 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
-            title={this.state.card_32}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_32}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_32
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_33}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -416,7 +455,8 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_34}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -424,23 +464,26 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
-            title={this.state.card_35}
-            onPress={() => {
-              this.props.navigation.navigate('CardDetail', {
-                cardName: this.state.card_35
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_35}
+          onPress={() => {
+            this.props.navigation.navigate('CardDetail', {
+              cardName: this.state.card_35
               });
             }}
             />
-          <Button
-            title={this.state.card_36}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_36}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_36
               });
             }}
             />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_37}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -448,31 +491,35 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
-            title={this.state.card_38}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_38}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_38
               });
             }}
             />
-          <Button
-            title={this.state.card_39}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_39}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_39
               });
             }}
             />
-          <Button
-            title={this.state.card_40}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_40}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_40
               });
             }}
             />
-            <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+            <Button color="#95c5f9"
             title={this.state.card_41}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -480,55 +527,62 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
-            title={this.state.card_42}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_42}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_42
               });
             }}
             />
-          <Button
-            title={this.state.card_43}
-            onPress={() => {
-              this.props.navigation.navigate('CardDetail', {
-                cardName: this.state.card_43
-              });
-            }}
-            />
-          <Button
-            title={this.state.card_44}
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_43}
+          onPress={() => {
+            this.props.navigation.navigate('CardDetail', {
+              cardName: this.state.card_43
+            });
+          }}
+          />
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_44}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_44
               });
             }}
             />
-          <Button
-            title={this.state.card_45}
-            onPress={() => {
-              this.props.navigation.navigate('CardDetail', {
-                cardName: this.state.card_45
-              });
-            }}
-            />
-          <Button
-            title={this.state.card_46}
-            onPress={() => {
-              this.props.navigation.navigate('CardDetail', {
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_45}
+          onPress={() => {
+            this.props.navigation.navigate('CardDetail', {
+              cardName: this.state.card_45
+            });
+          }}
+          />
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_46}
+          onPress={() => {
+            this.props.navigation.navigate('CardDetail', {
                 cardName: this.state.card_46
               });
             }}
             />
-          <Button
-            title={this.state.card_47}
-            onPress={() => {
-              this.props.navigation.navigate('CardDetail', {
-                cardName: this.state.card_47
-              });
-            }}
-            />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_47}
+          onPress={() => {
+            this.props.navigation.navigate('CardDetail', {
+              cardName: this.state.card_47
+            });
+          }}
+          />
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_48}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -536,15 +590,17 @@ class HomeScreen extends React.Component {
               });
             }}
             />
-          <Button
-            title={this.state.card_49}
-            onPress={() => {
-              this.props.navigation.navigate('CardDetail', {
-                cardName: this.state.card_49
-              });
-            }}
-            />
-          <Button
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
+          title={this.state.card_49}
+          onPress={() => {
+            this.props.navigation.navigate('CardDetail', {
+              cardName: this.state.card_49
+            });
+          }}
+          />
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
+          <Button color="#95c5f9"
             title={this.state.card_50}
             onPress={() => {
               this.props.navigation.navigate('CardDetail', {
@@ -552,7 +608,9 @@ class HomeScreen extends React.Component {
               });
             }}
             />
+            <TextInput editable={false} style={{borderBottomColor: '#000', borderBottomWidth: 3, height: 5}}></TextInput>
         </ScrollView>
+        ) : null }
       </View>
     );
   }
@@ -563,6 +621,7 @@ class CardDetailScreen extends React.Component {
     super(props);
     console.log('Constructor called');
     this.state = {
+      fontLoaded: false,
       card_name: '',
       card_setName: '',
       card_cmc: '',
@@ -601,35 +660,43 @@ class CardDetailScreen extends React.Component {
   componentDidMount() {
     this.getData();
   }
-  componentWillMount() {
-    this.getData();
+  async componentWillMount() {
+    await Font.loadAsync({
+      'noto-sans-bold': require('./assets/fonts/NotoSans-Bold.ttf'),
+      'noto-sans-bold-italic': require('./assets/fonts/NotoSans-BoldItalic.ttf'),
+      'noto-sans-regular': require('./assets/fonts/NotoSans-Regular.ttf'),
+      'noto-sans-regular-italic': require('./assets/fonts/NotoSans-RegularItalic.ttf'),
+    });
+    this.setState({fontLoaded:true});
   }
   render() {
     let link = "https://shop.tcgplayer.com/magic/" + this.state.card_setName + "/" + this.state.card_name;
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>{this.state.card_name}</Text>
-        <Image source={{url:this.state.card_image}} style={{width: 250, height: 350}} />
-        <Text>{this.state.card_manaCost}</Text>
-        <Text>{this.state.card_cmc}</Text>
-        <Text>{this.state.card_colors}</Text>
-        <Text>{this.state.card_power}</Text>
-        <Text>{this.state.card_toughness}</Text>
-        <Text>{this.state.card_text}</Text>
-        <Text>{this.state.card_setName}</Text>
-        <Text>{this.state.card_rarity}</Text>
-        <Button
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor:'#303030'}}>
+      { this.state.fontLoaded ? (
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', fontFamily:'noto-sans-regular'}}>
+        <ScrollView style={{height:450, width:350}} contentContainerStyle={{ alignItems: 'center', justifyContent: 'center'}}>
+          <Text style={{fontSize: 32, color:'#F9C995'}}>{this.state.card_name}</Text>
+          <Image source={{url:this.state.card_image}} style={{width: 240, height: 336}} />
+          <Text style={{fontSize: 16, color:'#F9C995'}}>Mana Cost: {this.state.card_manaCost}</Text>
+          <Text style={{fontSize: 16, color:'#F9C995'}}>Converted Mana Cost: {this.state.card_cmc}</Text>
+          <Text style={{fontSize: 16, color:'#F9C995'}}>Colors: {this.state.card_colors}</Text>
+          <Text style={{fontSize: 16, color:'#F9C995'}}>Power: {this.state.card_power}</Text>
+          <Text style={{fontSize: 16, color:'#F9C995'}}>Toughness: {this.state.card_toughness}</Text>
+          <Text style={{fontSize: 16, color:'#F9C995'}}>Set: {this.state.card_setName}</Text>
+          <Text style={{fontSize: 16, color:'#F9C995'}}>Rarity: {this.state.card_rarity}</Text>
+          <Text style={{fontSize: 20, color:'#F9C995', fontFamily:'noto-sans-bold'}}>{this.state.card_text}</Text>
+        </ScrollView>
+        <Button color="#95c5f9"
           title="Find Online"
           onPress={() => Linking.openURL(link)}
         />
-        <Button
+        <Button color="#95c5f9"
           title="Return Home"
           onPress={() => this.props.navigation.navigate('Home')}
         />
-        <Button
-          title="Go back"
-          onPress={() => this.props.navigation.goBack()}
-        />
+        </View>
+        ) : null}
       </View>
     );
   }
